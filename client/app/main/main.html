@@ -1,5 +1,5 @@
 
-<div ng-include="'components/navbar/navbar.html'" class="pink"></div>
+<div ng-include="'components/navbar/navbar.html'"></div>
 
 
   <div class="slider">
@@ -31,39 +31,32 @@
 
 
 
+  <div ng-show='loggedin' class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+      <a class="btn-floating btn-large arc-was-red" ng-click="addProduct()">
+          <i class="large mdi-content-add"></i>
+      </a>
+  </div>
 
 
-
-      <div ng-show='loggedin' class="fixed-action-btn" style="bottom: 45px; right: 24px;">
-          <a class="btn-floating btn-large arc-was-red" ng-click="addProduct()">
-              <i class="large mdi-content-add"></i>
-          </a>
+  <div class="container">
+      <div class="input-field col l8 m9 s12">
+          <form class="form" role="form" ng-submit='searchSubmit(searchText)'>
+              <i class="mdi-action-search prefix"></i>
+              <input type="text" ng-model="searchText" class="form-control btn-block" id="searchbox" ng-change="searchSubmit(searchText)" ng-model-options="{debounce:500}">
+              <label for="icon_prefix">Search</label>
+          </form>
       </div>
+  </div>
 
+  <div class='container' id='homePageContainer'>
+    <div class="row">
+      <div ng-repeat="product in productList">
+              
+      <product-card-view info="product" class="col l4 m6 s12 list-unstyled"></product-card-view>
 
-<div class="container">
-    <div class="input-field col l8 m9 s12">
-        <form class="form" role="form" ng-submit='searchSubmit(searchText)'>
-            <i class="mdi-action-search prefix"></i>
-            <input type="text" ng-model="searchText" class="form-control btn-block" id="searchbox" ng-change="searchSubmit(searchText)" ng-model-options="{debounce:500}">
-            <label for="icon_prefix">Search</label>
-        </form>
+      </div>
     </div>
-
-</div>
-
-
-    <div ng-repeat="product in productList">
-        <div ng-switch='' on='$index % 3'>
-            <div class="row" ng-switch-when="0">
-                <product-card-view info="productList[$index+0]" ng-show="productList[$index+0]" class="col l4 m6 s12 list-unstyled"></product-card-view>
-
-                <product-card-view info="productList[$index+1]" ng-show="productList[$index+1]" class="col l4 m6 s12 list-unstyled"></product-card-view>
-
-                <product-card-view info="productList[$index+2]" ng-show="productList[$index+2]" class="col l4 m6 s12 list-unstyled"></product-card-view>
-            </div>
-        </div>
-    </div>
+  </div>
 
 
 
