@@ -2,21 +2,33 @@
 
 .productCard{
 
-
+  padding: 5px 20px;
 
   #productDescInCard{
     padding-top: 8px;
     padding-bottom: 5px;
     margin-top: 0px ;
     margin-bottom: -20px ;
-    
+    height: 35px;
+
     .description{
       line-height: 150%;
       font-size: 1rem;
       color: #333333;
       font-weight: 400;
       text-transform: none;
+      text-overflow:ellipsis;
+      overflow:hidden;
+      white-space:nowrap;
     }
+  }
+
+  #priceInCard{
+    border-top: none;
+    height: 50px;
+    padding-top: 0px;
+    padding-bottom: 5px;
+    vertical-align: bottom;
 
     .price {
       color: #333333;
@@ -55,7 +67,7 @@
       font-size: 1.1rem ;
       color: #333333 ;
       margin-top: -5px ;
-      margin-bottom: -10px ;
+      margin-bottom: -15px ;
       font-weight: 500;
     }
   }
@@ -64,6 +76,8 @@
     padding-top: 5px ;
     padding-bottom: 5px ;
     margin-top: 0px ;
+    overflow: hidden;
+    white-space: nowrap;
   }
 
 
@@ -85,7 +99,7 @@
     display: inline-block ;
     vertical-align: 35% ;
     font-size: 1.0rem;
-    text-indent: -0.5rem;
+    text-indent: -0.6rem;
     font-weight: 475;
   }
 
