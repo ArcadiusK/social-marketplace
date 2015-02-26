@@ -17,9 +17,13 @@
 
                         <div class="card-action" id="productDescInCard">
                             <p class="description">{{product.desc}}</p>
+                        </div>
+
+                        <div class="card-action" id="priceInCard">
                             <h4 class='price'>{{product.price | currency:undefined:0}}</h4>
                             <h4 class='strike'>{{product.retailPrice | currency:undefined:0}}</h4>
                         </div>
+
                     </a>
 
                     <div class="card-action" id="productFavInCard">

@@ -1,6 +1,8 @@
 (function ($) {
 
   $.fn.dropdown = function (options) {
+
+       console.log('hit');
     var defaults = {
       inDuration: 300,
       outDuration: 225,

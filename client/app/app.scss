@@ -20,6 +20,8 @@ html{
     font-size: 14px !important;
 }
 
+
+
 .browsehappy {
     margin: 0.2em 0;
     background: #ccc;
@@ -35,6 +37,10 @@ html{
     transition: all 0.0s !important;
 }
 
+$navTextColor: #1a237e;
+$navFontSize: 1.2rem;
+$navHoverHighlight: #3f51b5;
+$navDropdownHighlight: #f3e5f5;
 
 // Component styles are injected through grunt
 // injector
@@ -54,10 +60,6 @@ html{
 @import 'products/products.scss';
 @import 'profile/profile.scss';
 @import 'review/review.scss';
-@import 'sidenav/brandSidenav.scss';
-@import 'sidenav/categorySidenav.scss';
-@import 'sidenav/conditionSidenav.scss';
-@import 'sidenav/navbars.scss';
 @import 'users/add_product/add_product.scss';
 @import 'users/followers/follow.scss';
 @import 'users/users.scss';
