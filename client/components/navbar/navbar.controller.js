@@ -20,8 +20,8 @@ angular.module('cornerfindApp')
 
     $scope.genderList = ['Boy', 'Girl'];
     
-    $scope.smallerThan768 = function(){ //768 is the twitter navbar breakpoint
-      return $scope.windowWidth < 768 ? true:false;
+    $scope.smallerThan = function(){ //navbar breakpoint
+      return $scope.windowWidth < 900 ? true:false;
     }
 
     $scope.logout = function() {

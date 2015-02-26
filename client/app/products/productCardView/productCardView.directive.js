@@ -56,12 +56,12 @@ angular.module('cornerfindApp')
 
                     if (scope.product.likes.length === 1) {
                         scope.likeText = scope.product.likes[0].userId.username + " likes this";
-                        if (scope.likeText.length > 40)
-                            scope.likeText = scope.likeText.slice(0, 37) + "..."
+                        if (scope.likeText.length > 35)
+                            scope.likeText = scope.likeText.slice(0, 32) + "..."
                     } else if (scope.product.likes.length > 1) {
                         scope.likeText = scope.product.likes[0].userId.username + " and " + (scope.product.likes.length - 1) + " others like this";
-                        if (scope.likeText.length > 40)
-                            scope.likeText = scope.likeText.slice(0, 37) + "..."
+                        if (scope.likeText.length > 35)
+                            scope.likeText = scope.likeText.slice(0, 32) + "..."
                     } else {
                         scope.likeText = '';
                     }
