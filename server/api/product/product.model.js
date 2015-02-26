@@ -16,7 +16,8 @@ available: {type: Boolean},
 price: {type: Number},
 brand: {type: String},
 retailPrice: {type: Number},
-offers: [{type: Schema.Types.ObjectId, ref: 'Order',default:[]}]
+offers: [{type: Schema.Types.ObjectId, ref: 'Order',default:[]}],
+size: {type: Schema.Types.ObjectId, ref: 'Size'}
 });
 
 ProductSchema.index({name: 'text', brand: 'text', category:'text', desc: 'text' });
