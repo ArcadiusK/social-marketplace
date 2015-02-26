@@ -250,7 +250,7 @@ User.find({}).remove(function() {
                                         available: true,
                                         price: 72.00,
                                         brand: "Uniqlo",
-                                        retailPrice: 98.00
+                                        retailPrice: 98.00,
                                     },{
                                         userId: user_parameter1._id,
                                         category: ["Clothing"], //from categories collection
@@ -267,7 +267,7 @@ User.find({}).remove(function() {
                                         available: true,
                                         price: 12.00,
                                         brand: "Juicy Couture",
-                                        retailPrice: 30.00
+                                        retailPrice: 30.00,
                                     }, {
                                         userId: user_parameter1._id,
                                         category: ["Shoes"], //from categories collection
@@ -280,7 +280,7 @@ User.find({}).remove(function() {
                                         available: true,
                                         price: 18.00,
                                         brand: "CTRCO",
-                                        retailPrice: 42.00
+                                        retailPrice: 42.00,
                                     }, {
                                         userId: user_parameter1._id,
                                         category: ["Clothing"], //from categories collection
@@ -293,7 +293,7 @@ User.find({}).remove(function() {
                                         available: true,
                                         price: 34.00,
                                         brand: "Prada",
-                                        retailPrice: 60.00
+                                        retailPrice: 60.00,
                                     }, {
                                         userId: user_parameter4._id,
                                         category: ["Toys"], //from categories collection
@@ -306,7 +306,7 @@ User.find({}).remove(function() {
                                         available: true,
                                         price: 61.00,
                                         brand: "Uniqlo",
-                                        retailPrice: 97.00
+                                        retailPrice: 97.00,
                                     }, {
                                         userId: user_parameter2._id,
                                         category: ["Cribs"], //from categories collection
@@ -319,7 +319,7 @@ User.find({}).remove(function() {
                                         available: true,
                                         price: 45.00,
                                         brand: "Espresso",
-                                        retailPrice: 108.00
+                                        retailPrice: 108.00,
                                     },  {
                                         userId: user_parameter3._id,
                                         category: ["Children Books"], //from categories collection
