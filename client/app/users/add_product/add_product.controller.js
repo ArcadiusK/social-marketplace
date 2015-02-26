@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('cornerfindApp')
-    .controller('AddProductCtrl', function($scope, brand, condition, category, $q, products, Auth, $state) {
+    .controller('AddProductCtrl', function($scope, brand, size, condition, category, $q, products, Auth, $state) {
 
         if(!Auth.isLoggedIn()){
             return $state.go('login')
@@ -10,6 +10,7 @@ angular.module('cornerfindApp')
 
         //GET all Brands and Categories
         $scope.availableBrands = brand.query();
+        $scope.availableSizes = size.query();
         $scope.availableCategories = category.query();
         $scope.availableConditions = condition.query();
         $scope.userId = Auth.getCurrentUser()._id;
@@ -26,12 +27,18 @@ angular.module('cornerfindApp')
 
         $scope.showBrands = false;
         $scope.showCategories = false;
+        $scope.showSizes = false;
         $scope.brandButton = 'Choose a Brand';
+        $scope.sizeButton = 'Choose a Size';
         $scope.categoryButton = 'Choose a Category';
         $scope.conditionButton = 'Choose a Condition';
 
         $scope.chooseBrand = function() {
             $scope.showBrands = true;
+        }
+
+        $scope.chooseSize = function() {
+            $scope.showSizes = true;
         }
 
         $scope.selectBrand = function(selected) {

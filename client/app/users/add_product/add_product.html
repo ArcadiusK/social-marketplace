@@ -55,6 +55,20 @@ $(document).ready(function() {
 
               </div>
             </div>
+
+            <div class="row">
+              <div class="input-field col l12 m12 s12">
+                <button type='size' ng-click='chooseSize()' class='col s12 m12 l12 btn btn-primary light-blue'>{{sizeButton}}</button>
+                <div ng-show='showSizes' class="row">
+                    <div class="col s12">
+                        <ul ng-repeat='size in availableSizes' class="tabs">
+                            <li class="tab col s3"><a ng-click='selectSize(size.name)'>{{size.name}}</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+              </div>
+            </div>
             
             <div class="row">
               <div class="input-field col l12 m12 s12">
