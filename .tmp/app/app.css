@@ -14705,7 +14705,7 @@ html {
   text-decoration: none; }
 
 .productCard {
-  padding: 5px 20px; }
+  padding: 0px 5px; }
   .productCard #productDescInCard {
     padding-top: 8px;
     padding-bottom: 5px;
@@ -14721,62 +14721,67 @@ html {
       text-overflow: ellipsis;
       overflow: hidden;
       white-space: nowrap; }
-  .productCard #priceInCard {
-    border-top: none;
-    height: 50px;
-    padding-top: 0px;
-    padding-bottom: 5px;
-    vertical-align: bottom; }
-    .productCard #priceInCard .price {
-      color: #333333;
-      font-size: 1.25rem;
-      display: inline-block;
-      font-weight: 600; }
-    .productCard #priceInCard .strike {
-      display: inline-block;
-      text-decoration: line-through;
-      font-size: 1.05rem;
-      color: #9e9e9e;
-      display: inline-block;
-      text-indent: 0.5rem;
-      margin-top: 0px;
-      margin-bottom: 0px;
-      vertical-align: -2%; }
   .productCard #productSubtitle {
     padding-top: 0px;
     padding-bottom: 5px;
     border-top: 0px;
     margin-top: -20px; }
-    .productCard #productSubtitle .username {
-      color: #9e9e9e;
+    .productCard #productSubtitle #username a {
+      font-size: 1rem;
+      color: #546e7a;
       margin-bottom: 0px;
-      text-indent: -1.45rem; }
-    .productCard #productSubtitle .productName {
-      font-size: 1.1rem;
-      color: #333333;
-      margin-top: -5px;
-      margin-bottom: -15px;
+      margin-top: 3px;
+      margin-left: -10px; }
+    .productCard #productSubtitle #productName {
+      font-size: 1rem;
+      color: #212121;
+      margin-top: 5px;
+      margin-bottom: 8px;
       font-weight: 500; }
+    .productCard #productSubtitle #productDetails a {
+      font-size: 1rem;
+      color: #546e7a; }
+    .productCard #productSubtitle .price {
+      margin-top: 10px;
+      color: #333333;
+      font-size: 1.0rem;
+      display: inline-block;
+      font-weight: 600; }
+    .productCard #productSubtitle .strike {
+      display: inline-block;
+      text-decoration: line-through;
+      font-size: 0.95rem;
+      color: #fontBlack;
+      display: inline-block;
+      text-indent: 0.5rem;
+      margin-top: 0px;
+      margin-bottom: 0px; }
   .productCard #productFavInCard {
     padding-top: 5px;
     padding-bottom: 5px;
     margin-top: 0px;
-    overflow: hidden;
     white-space: nowrap; }
+    .productCard #productFavInCard a {
+      margin-right: 5px; }
   .productCard #favoriteIcon {
     display: inline-block;
     font-size: 1.8rem;
     color: #ffcdd2; }
+  .productCard #favoriteLink {
+    margin-right: 5px; }
   .productCard .favorited {
     color: #e53935 !important; }
   .productCard #productFavoriteDisplay {
     margin-top: 0px;
     margin-bottom: 0px;
     display: inline-block;
-    vertical-align: 35%;
+    vertical-align: 10%;
     font-size: 1.0rem;
-    text-indent: -0.6rem;
-    font-weight: 475; }
+    font-weight: 475;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: calc(100% - 30px); }
   .productCard a:hover {
     text-decoration: none !important; }
   .productCard .card-image {
