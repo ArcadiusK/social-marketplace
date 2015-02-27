@@ -1,7 +1,7 @@
 .navbar{
 
   a{
-    text-decoration: none; 
+    text-decoration: none;
   }
 
   .brand-logo{
@@ -16,11 +16,11 @@
       padding: 15px 15px;
       position: relative;
       text-decoration: none;
-      background-color: #e1bee7;
-      
+      background-color: $backgroundTheme;
+
       &:hover,&:focus{
       color: $navHoverHighlight;
-      background-color: #e1bee7;
+      background-color: $backgroundTheme;
       };
   }
 
@@ -51,7 +51,7 @@
      margin-top: -9px;
      margin-bottom: 18px;
      &:hover,&:focus{
-    color: '#9c27b0';
+    color: $backgroundTheme;
     }
   }
 
@@ -110,7 +110,7 @@
         margin: 15px 0;
     }
     /* since 3.1.0 */
-    .navbar-collapse.collapse.in { 
+    .navbar-collapse.collapse.in {
         display: block!important;
     }
     .collapsing {
