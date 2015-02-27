@@ -16,6 +16,7 @@ var Address = require('../api/address/address.model');
 var Chat = require('../api/chat/chat.model');
 var auth = require('../auth/auth.service');
 var Review = require('../api/review/review.model');
+var Size = require('../api/size/size.model');
 
 Thing.find({}).remove(function() {
     Thing.create({
@@ -41,58 +42,105 @@ Thing.find({}).remove(function() {
 
 Brand.find({}).remove(function() {
     Brand.create({
-        name: "Gucci"
+        name: 'Gucci'
     }, {
-        name: "Juicy Couture"
+        name: 'Juicy Couture'
     }, {
-        name: "Gap"
+        name: 'Gap'
     }, {
-        name: "Uniqlo"
+        name: 'Uniqlo'
     }, {
-        name: "Ralph Lauren"
+        name: 'Ralph Lauren'
     }, {
-        name: "Prada"
+        name: 'Prada'
     }, {
-        name: "Espresso"
+        name: 'Espresso'
     }, {
-        name: "CTRCO"
+        name: 'CTRCO'
     }, {
-        name: "Book"
+        name: 'Book'
     }, {
-        name: "Other"
+        name: 'Other'
     });
 });
 
 Category.find({}).remove(function() {
     Category.create({
-        name: "Shoes"
+        name: 'Shoes'
     }, {
-        name: "Clothing"
+        name: 'Clothing'
     }, {
-        name: "Toys"
+        name: 'Toys'
     }, {
-        name: "Children Books"
+        name: 'Children Books'
     }, {
-        name: "Cribs"
+        name: 'Cribs'
     }, {
-        name: "Strollers"
+        name: 'Strollers'
+    });
+});
+
+
+Size.find({}).remove(function() {
+    Size.create({
+        name: 'Preemie (P)'
+    }, {
+        name: 'Newborn (NB)'
+    }, {
+        name: '3m Baby'
+    }, {
+        name: '6m Baby'
+    }, {
+        name: '9m Baby'
+    }, {
+        name: '12m Baby'
+    },{
+        name: '18m Baby'
+    }, {
+        name: '24m Baby'
+    }, {
+        name: '2T Toddler'
+    }, {
+        name: '3T Toddler'
+    }, {
+        name: '4T Toddler'
+    },{
+        name: '5T Toddler'
+    }, {
+        name: '4 Kid'
+    }, {
+        name: '5 Kid'
+    }, {
+        name: '6 Kid'
+    }, {
+        name: '7 Kid'
+    },{
+        name: '8 Kid'
+    }, {
+        name: '9 Kid'
+    }, {
+        name: '10 Kid'
+    }, {
+        name: '11 Kid'
+    }, {
+        name: '12 Kid'
     });
 });
 
 
 Condition.find({}).remove(function() {
     Condition.create({
-        name: "New"
+        name: 'New'
     }, {
-        name: "Used - Like New"
+        name: 'Used - Like New'
     }, {
-        name: "Very Good"
+        name: 'Very Good'
     }, {
-        name: "Good"
+        name: 'Good'
     }, {
-        name: "Average"
+        name: 'Average'
     }, {
-        name: "Acceptable"
+        name: 'Acceptable'
     });
 });
 
@@ -251,6 +299,7 @@ User.find({}).remove(function() {
                                         price: 72.00,
                                         brand: "Uniqlo",
                                         retailPrice: 98.00,
+                                        size: '12m Baby'
                                     },{
                                         userId: user_parameter1._id,
                                         category: ["Clothing"], //from categories collection
@@ -268,6 +317,7 @@ User.find({}).remove(function() {
                                         price: 12.00,
                                         brand: "Juicy Couture",
                                         retailPrice: 30.00,
+                                        size: '6m Baby'
                                     }, {
                                         userId: user_parameter1._id,
                                         category: ["Shoes"], //from categories collection
@@ -281,6 +331,7 @@ User.find({}).remove(function() {
                                         price: 18.00,
                                         brand: "CTRCO",
                                         retailPrice: 42.00,
+                                        size: 'Newborn (NB)'
                                     }, {
                                         userId: user_parameter1._id,
                                         category: ["Clothing"], //from categories collection
@@ -294,6 +345,7 @@ User.find({}).remove(function() {
                                         price: 34.00,
                                         brand: "Prada",
                                         retailPrice: 60.00,
+                                        size: '4 Kid'
                                     }, {
                                         userId: user_parameter4._id,
                                         category: ["Toys"], //from categories collection
