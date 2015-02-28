@@ -88,8 +88,10 @@
 .red-text.text-lighten-1 {
   color: #EF5350 !important; }
 
+
+
 .red {
-  background-color: #F44336 !important; }
+  background-color: #E1BEE7 !important; }
 
 .red-text {
   color: #F44336 !important; }
@@ -2101,12 +2103,13 @@ footer.page-footer {
   margin-top: 20px;
   padding-top: 20px;
   background-color: #e1bee7; }
+
   footer.page-footer .footer-copyright {
     overflow: hidden;
     height: 50px;
     line-height: 50px;
     color: rgba(255, 255, 255, 0.8);
-    background-color: rgba(51, 51, 51, 0.08); }
+    background-color: #e1bee7; }
 
 table, th, td {
   border: none; }
