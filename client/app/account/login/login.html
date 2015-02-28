@@ -1,12 +1,12 @@
 <div ng-include="'components/navbar/navbar.html'"></div>
 
-<div class="container">
+<div class="container" >
   <div class="row">
-    <div class="col-sm-12">
+    <div class="col s12 center">
       <h4 id='loginTitle'>Login</h4>
      
     </div>
-    <div class="col-sm-12">
+    <div class="col l6 m8 s12 offset-l3 offset-m2 center">
       <form class="form" name="form" ng-submit="login(form)" novalidate>
 
         <div class="form-group">
@@ -33,27 +33,29 @@
           </p>
 
           <p class="help-block">{{ errors.other }}</p>
+          <br>
         </div>
+
 
         <div>
           <button class="btn btn-inverse btn-lg btn-login" type="submit">
             Login
           </button>
           <a class="btn btn-default btn-lg btn-register" href="/signup">
-            Register
+            Sign up
           </a>
         </div>
 
         <hr>
         <div>
           <a class="btn btn-facebook" href="" ng-click="loginOauth('facebook')">
-            <i class="fa fa-facebook"></i> Connect with Facebook
+            <i class="fa fa-facebook"></i>&nbspFacebook
           </a>
           <a class="btn btn-google-plus" href="" ng-click="loginOauth('google')">
-            <i class="fa fa-google-plus"></i> Connect with Google+
+            <i class="fa fa-google-plus"></i> &nbsp Google+
           </a>
           <a class="btn btn-twitter" href="" ng-click="loginOauth('twitter')">
-            <i class="fa fa-twitter"></i> Connect with Twitter
+            <i class="fa fa-twitter"></i> &nbsp Twitter
           </a>
         </div>
       </form>
