@@ -41,9 +41,11 @@ $navTextColor: #1a237e;
 $navFontSize: 1.2rem;
 $navHoverHighlight: #3f51b5;
 $navDropdownHighlight: #f3e5f5;
+$highlightSelect: #e1bee7;
 $fontBlack: #212121;
 $fontLinkColor: #546e7a;
 $backgroundTheme: #e1bee7;
+$fontAdminTitle: 1.2rem;
 
 
 // Component styles are injected through grunt
@@ -52,6 +54,8 @@ $backgroundTheme: #e1bee7;
 @import 'account/login/login.scss';
 @import 'account/manageAccount/manageAccount.scss';
 @import 'account/manageAccount/manageOffer.scss';
+@import 'account/manageAccount/manageprofile.scss';
+@import 'account/manageAccount/managerListing.card.scss';
 @import 'admin/admin.scss';
 @import 'chat/chat.scss';
 @import 'checkout/checkoutDirective/checkoutDirective.scss';
