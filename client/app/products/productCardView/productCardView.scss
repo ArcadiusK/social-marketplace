@@ -44,6 +44,9 @@
       margin-top: 5px ;
       margin-bottom: 8px ;
       font-weight: 500;
+      overflow:hidden;
+      white-space:nowrap;
+      text-overflow:ellipsis;
     }
     #productDetails a{
       font-size: 1.0rem ;
