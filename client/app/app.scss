@@ -45,8 +45,13 @@ $highlightSelect: #e1bee7;
 $fontBlack: #212121;
 $fontLinkColor: #546e7a;
 $backgroundTheme: #e1bee7;
-$fontAdminTitle: 1.2rem;
+$fontAdminTitle: 1.3rem;
+$fontDescriptionSize: 1.0rem;
+$fontDescriptionTitleSize: 1.1rem;
 
+body{
+    background-color: #fafafa;
+}
 
 // Component styles are injected through grunt
 // injector
