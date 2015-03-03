@@ -1,25 +1,22 @@
 
-<div class="row chat section">
-      <div class="col l12 s12" ng-controller="ChatCtrl">
-          <div class="card-panel pink lighten-5"  ng-repeat="chat in chatList">
-            <h3 id='chatUsername'>{{chat.username}}</h3>
-            <h4 id="chatText">{{chat.textLine}}</h4>
+<div class="row section" id='listChatCard'>
+      <div class="col l12 s12" ng-controller="ChatCtrl" >
+          <div class="card-panel"  ng-repeat="chat in chatList" id='chat' >
+              <span id='chatUsername'>{{chat.username}}</span>
+              <span id="chatText">&nbsp &nbsp{{chat.textLine}}</span>
         </div>
       </div>
 </div>
 
-<div ng-controller="ChatCtrl" ng-show="isLoggedIn()">
- <div class="card-panel blue lighten-4">
+<div ng-controller="ChatCtrl" ng-show="isLoggedIn()" id='newMessageDiv'>
+ <div class="card-panel blue lighten-4" id="newMessageCard">
   <form ng-submit="addChat(newChatText)">
-
     <div class="input-field">
-
-      <i class="mdi-editor-mode-edit prefix"></i>
-      <textarea id="icon_prefix2" class="materialize-textarea" ng-model="newChatText"></textarea>
+      <i class="small mdi-editor-mode-edit prefix"></i>
+      <input id="icon_prefix2" class="validate" type='text' ng-model="newChatText"></input>
       <label for="icon_prefix2">New Message</label>
-
-      <button type="submit" class="btn btn-primary center-align">Submit</button>
-
+ <!--      <button type="submit" class="btn btn-primary center-align">Submit</button>
+ -->
     </div>
   </form>
   </div>

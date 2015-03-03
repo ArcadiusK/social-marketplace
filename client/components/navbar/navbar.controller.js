@@ -17,6 +17,7 @@ angular.module('cornerfindApp')
     $scope.isLoggedIn = Auth.isLoggedIn;
     $scope.isAdmin = Auth.isAdmin;
     $scope.currentUser = Auth.getCurrentUser();
+    $scope.userFirstName = $scope.currentUser.name.split(" ")[0];
 
     $scope.genderList = ['Boy', 'Girl'];
     

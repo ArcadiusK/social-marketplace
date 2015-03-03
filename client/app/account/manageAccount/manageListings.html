@@ -1,10 +1,34 @@
-<div class="row">
-
-  	<h1>LISTINGS VIEW {{currentUser.name}}</h1>
-  	
-  	<div class='col s12 m12 l6' ng-repeat="listing in usersListings">
+<div class="row">  	
+  	<div class='col s12 m10 offset-m1' ng-repeat="listing in usersListings">
   	<!-- need to get offers on this product and display-->
-  	<manage-listing-card info='listing' edit-product="submitProductChanges(listing)"></manage-listing-card>
+   	<div class="col s12">
+  		<div class='card-panel'>
+  		 <div class="row halign-wrapper">
+  			<div class='col s12 m8 offset-m2'>
+  				<img class='circle responsive-img' ng-src="{{listing.photoUrls[0]}}" >
+  			</div>	
+
+  			 <div class='input-field col s12'>
+                <input id='productName'type='text'ng-model='listing.name' class='validate'></input>
+                <label for='productName' class='active'>Product Name</label>
+            </div>
+           
+            <div class='input-field col s12'>
+                <textarea id='description' ng-model='listing.desc' class="materialize-textarea"></textarea>
+                <label for='description' class='active'>Description</label>
+            </div>
+
+            <div class='input-field col s12'>
+                <input id='price' type="tel" ng-model="listing.price"></input>
+                <label for='price' class='active'>Price</label>
+            </div>
+  		
+  		  	<button class='btn purple accent-3 waves-effect' ng-click='submitButton()'>Submit Changes</button>
+            <button type='button' class='btn red accent-4'>Cancel</button>
+
+		</div>
+  		</div>
+  	</div>		
 
   	</div>
 
