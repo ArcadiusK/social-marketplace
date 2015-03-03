@@ -2,19 +2,21 @@
 	padding: 5px 5px;
 	/*border-bottom: thin solid #9e9e9e;*/
 	text-decoration: none;
-	font-size: 1.5rem;
-	color: #26a69a;
+	font-size: 1.2rem;
+	color: $fontBlack;
 	box-sizing: border-box;
 	float:left;
 
 	&:hover{
-		background-color: #E2DEDE;
+		background-color: $navDropdownHighlight;
 	}
 
 	&.active {
-		background-color: #26a69a;
-		color: #fff;
+		background-color: $highlightSelect;
+		color: $fontBlack;
 	}
 
 }
+
+
 

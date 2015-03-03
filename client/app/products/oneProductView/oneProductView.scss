@@ -24,16 +24,16 @@
 	}
 
     .productName{
-    	font-weight: 500;
-    	font-size: 1.5rem;
+    	font-weight: 600;
+    	font-size: $fontAdminTitle;
     	margin-bottom: 20px;
     	margin-top: 5px;
     	line-height: 90%;
     }
 
     .desc{
-		  line-height: 150%;
-	    font-size: 1.2rem;
+		  line-height: 125%;
+	    size: $fontDescriptionSize;
 	    color: #333333;
 	    line-height: 130%;
 	    font-weight: 400;
@@ -42,7 +42,7 @@
 
 	.price {
       color: #333333;
-      font-size: 1.25rem;
+      font-size: 1.1rem;
       display: inline-block;
       font-weight: 600;
       margin-top: 10px;
@@ -51,7 +51,7 @@
 
 
     .strike {
-      font-size: 1.15rem;
+      font-size: 1.0rem;
       display: inline-block;
       margin-top: 10px;
       display: inline-block;
@@ -70,6 +70,10 @@
     .offerInput{
 
 
+    }
+
+    .warning{
+      margin-bottom: 10px;
     }
 
     .offerButton{
