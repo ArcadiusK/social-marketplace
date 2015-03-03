@@ -1,17 +1,28 @@
-.chat{
+#listChatCard{
+
+	#chat{
+	padding: 15, 20, 15, 20px;
+	text-wrap: normal;
+	}
 
 	#chatUsername{
-		font-size: 1.4rem;
-		margin-top: -10px;
+		font-size: $fontDescriptionTitleSize;
 		font-weight: 600;
-		margin-bottom: 0px;
 	}
 
 	#chatText{
-		font-size: 1.2rem;
+		font-size: $fontDescriptionSize;
 		font-weight: 575;
-		margin-bottom: -10px;
-		margin-top: -5px;
 	}
+}
 
+
+#newMessageDiv{
+
+	#newMessageCard{
+
+		padding-top: 5px;
+		padding-bottom: 10px;
+
+	}
 }
