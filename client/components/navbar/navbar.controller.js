@@ -18,7 +18,7 @@ angular.module('cornerfindApp')
     $scope.isAdmin = Auth.isAdmin;
     $scope.currentUser = Auth.getCurrentUser();
 
-    if(Auth.isLoggedIn){
+    if(Auth.isLoggedIn()){
       $scope.userFirstName = $scope.currentUser.name.split(" ")[0];
     }
 
